@@ -62,7 +62,7 @@ resource "aws_instance" "jenkins-build-agent" {
     key_name = "my_key"
     # security_groups = [aws_security_group.jenkins-container-buildAgent-SG.id]
     vpc_security_group_ids = [aws_security_group.jenkins-container-buildAgent-SG.id]
-    ami = "ami-016028889ceebfc33"
+    ami = "ami-0f58b397bc5c1f2e8"
     count = 1
     associate_public_ip_address = true
 }
